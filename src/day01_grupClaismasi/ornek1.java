@@ -20,9 +20,9 @@ public class ornek1 {
         12345678910
                 */
 
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 0; i <= 10; i++) { //satir icin
 
-            for (int j = 1; j <=i ; j++) {
+            for (int j = 1; j <=i ; j++) { //sutun icin
                 System.out.print(j);
             }
             System.out.println("");
