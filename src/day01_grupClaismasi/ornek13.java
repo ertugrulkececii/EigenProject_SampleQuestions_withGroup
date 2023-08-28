@@ -32,4 +32,35 @@ public class ornek13 {
 
         } else System.out.println("Karakteriniz palindrom degildir.");
     }
+
+    public static class ornek17 {
+        public static void main(String[] args) {
+
+              /*17---
+        Üç sayı arasındaki en küçük sayıyı bulmak için bir Java METHOD yazın.
+
+        Test data:
+        12,24,34
+
+        Beklenen Çıktı: 12
+        */
+            enKucukSayiBul(12,24,34);
+
+
+        }
+
+        public static void enKucukSayiBul(int a,int b, int c){
+            int enKucuk=a;
+            if(b<a&&b<c){
+                enKucuk=b ;
+
+            } else if (c<a&&c<b) {
+                enKucuk=c;
+
+            }
+
+            System.out.println(enKucuk);
+        }
+
+    }
 }
