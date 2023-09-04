@@ -5,42 +5,36 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ornek26 {
-    public static void main(String[] args) {
-
-
     /*26-----
-    Array i ARRAYLIST e ceviren Java Kodunu yaziniz.
-    Array : [ "Python", "JAVA", "PHP", "Perl", "C#", "C++" ]
+   Array i ARRAYLIST e ceviren Java Kodunu yaziniz.
+   Array : [ "Python", "JAVA", "PHP", "Perl", "C#", "C++" ]
 
-    Beklenen Cikti:
-    [Python, JAVA, PHP, Perl, C#, C++]
-    */
+   Beklenen Cikti:
+   [Python, JAVA, PHP, Perl, C#, C++]
+   */
+    public static void main(String[] args) {
+/*
+        String[] arr={"Python", "JAVA", "PHP", "Perl", "C#", "C++"};
+        ArrayList<String> arrayList=new ArrayList<>(Arrays.asList(arr));
 
-        String arr[]={"Python", "JAVA", "PHP", "Perl", "C#", "C++"};
+        System.out.println("Beklenen cikti : "+arrayList);
 
-        List<String> list=new ArrayList<>(Arrays.asList(arr));
+ */
 
-        System.out.println("Beklenen Cikti: \n"+list);
-        // Array tanımlama
-        String[] array = { "Python", "JAVA", "PHP", "Perl", "C#", "C++" };
-//============================*******2.cozum*******=====================
-// ArrayList oluşturma
-        ArrayList<String> arrayList = new ArrayList<String>();
+//****************************2.cozum************************************
 
-// Array'in elemanlarını ArrayList'e ekleme
-        for (String element : array) {
-            arrayList.add(element);
+
+       /* ArrayList<String> arrayList=new ArrayList<>();
+        String[] arr={"Python", "JAVA", "PHP", "Perl", "C#", "C++"};
+        for (String each:arr ) {
+            arrayList.add(each);
+
         }
-
-// ArrayList'i yazdırma
         System.out.println(arrayList);
 
-
-        //==========================******listi Array cevirme***********==================
-
-
-        // String tipinde bir ArrayList oluşturma
-        ArrayList<String> arrayListi = new ArrayList<String>();
+        */
+      //  *************************************3.cozum*****************************8
+        ArrayList<String> arrayList=new ArrayList<>();
         arrayList.add("Python");
         arrayList.add("JAVA");
         arrayList.add("PHP");
@@ -48,11 +42,10 @@ public class ornek26 {
         arrayList.add("C#");
         arrayList.add("C++");
 
-// ArrayList'i String[] tipinde bir array'e çevirme
-        String[] arrr = arrayListi.toArray(new String[0]);
+        String[] arr=arrayList.toArray(new String[arrayList.size()]);
 
-// Array'i yazdırma
-        System.out.println(Arrays.toString(arrr));
+        System.out.println(Arrays.toString(arr));
+
     }
 }
 
