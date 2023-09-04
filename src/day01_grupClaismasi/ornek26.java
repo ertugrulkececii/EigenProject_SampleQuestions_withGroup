@@ -21,6 +21,38 @@ public class ornek26 {
         List<String> list=new ArrayList<>(Arrays.asList(arr));
 
         System.out.println("Beklenen Cikti: \n"+list);
+        // Array tanımlama
+        String[] array = { "Python", "JAVA", "PHP", "Perl", "C#", "C++" };
+//============================*******2.cozum*******=====================
+// ArrayList oluşturma
+        ArrayList<String> arrayList = new ArrayList<String>();
+
+// Array'in elemanlarını ArrayList'e ekleme
+        for (String element : array) {
+            arrayList.add(element);
+        }
+
+// ArrayList'i yazdırma
+        System.out.println(arrayList);
+
+
+        //==========================******listi Array cevirme***********==================
+
+
+        // String tipinde bir ArrayList oluşturma
+        ArrayList<String> arrayListi = new ArrayList<String>();
+        arrayList.add("Python");
+        arrayList.add("JAVA");
+        arrayList.add("PHP");
+        arrayList.add("Perl");
+        arrayList.add("C#");
+        arrayList.add("C++");
+
+// ArrayList'i String[] tipinde bir array'e çevirme
+        String[] arrr = arrayListi.toArray(new String[0]);
+
+// Array'i yazdırma
+        System.out.println(Arrays.toString(arrr));
     }
 }
 
