@@ -15,10 +15,21 @@ public class V01_Sorulsr {
          */
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("typ een password");
+        String password = scanner.next();
 
-        String sifre = scanner.next();
-
+      if (!(password.charAt(0)>='a' && password.charAt(0)<='z') ){
+          System.out.println("Uw eerst letter van password is niet smal!");
+      } else if (!(password.charAt((password.length()-1))<=9)) {
+          System.out.println("Uw laatste character is niet cijfer!");
+      } else if (!(password.contains(" "))) {
+          System.out.println("Uw password heeft gat/gaten!");
+      } else if (!(password.length()==10)) {
+          System.out.println("Uw password lang niet gelijk met 10!");
+      } else System.out.println("Password heeft succeesful geregistereerd");
 
 
     }
-}
+
+    }
+
