@@ -20,7 +20,7 @@ public class V01_Sorulsr {
 
       if (!(password.charAt(0)>='a' && password.charAt(0)<='z') ){
           System.out.println("Uw eerst letter van password is niet klein!");
-      } else if (!(password.charAt(password.length()-1))) {
+      } else if (!(password)) {
           System.out.println("Uw laatste character is niet cijfer!");
       } else if (!(password.contains(" "))) {
           System.out.println("Uw password heeft gat/gaten!");
